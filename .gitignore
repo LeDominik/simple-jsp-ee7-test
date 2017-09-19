@@ -11,3 +11,6 @@ buildNumber.properties
 .vscode
 .classpath
 .project
+build
+.gradle
+bin

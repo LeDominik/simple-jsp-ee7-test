@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'war'
+
+group = 'com.test'
+version = '1.0-SNAPSHOT'
+
+description = 'small test of Java EE 7 with good \'old JSP'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {   
+     maven { url 'http://repo.maven.apache.org/maven2' }
+}
+
+dependencies {
+    providedCompile group: 'javax', name: 'javaee-api', version:'7.0'
+}
