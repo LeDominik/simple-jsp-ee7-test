@@ -19,6 +19,8 @@ import java.util.List;
 @Named
 @RequestScoped
 public class ViewCtrl implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Inject AppController app;
 
     List<User> dummyUsers = null;

@@ -18,7 +18,8 @@ import java.util.List;
 @Named
 @ApplicationScoped
 public class AppController implements Serializable {
-
+    private static final long serialVersionUID = 1L;
+    
     public AppController() {}
     private final static List<User> dummyUsers = Arrays.asList(
         new User(0, "user 0"),
