@@ -9,3 +9,5 @@ buildNumber.properties
 .mvn/timing.properties
 .settings
 .vscode
+.classpath
+.project
