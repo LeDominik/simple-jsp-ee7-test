@@ -17,9 +17,15 @@
           <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
           <hr class="my-4">
           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="data.jsp?name=MrNobody" role="button">"Dynamic" Data</a>
-          </p>
+
+          <form action="data.jsp" method="get">
+            <div class="form-group">
+              <label for="userName">The Name</label>
+              <input type="text" class="form-control" id="userName" name="name" aria-describedby="userNameHelp" placeholder="Enter name">
+              <small id="userNameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
         <p>You're at ${pageContext.request.requestURI}</p>
       </div>
