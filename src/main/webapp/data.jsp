@@ -19,7 +19,7 @@
     </header>
     <div class="container-fluid">
       <h3>You're at ${pageContext.request.requestURI}</h3>
-      <p>Query parameter name is: ${param.name}</p>
+      <p>Query parameter name is: ${param.name} and  ${param.entity}</p>
       <h2>BigHello: ${viewCtrl.bigHello(param.name)}</h2>
       <p>Calling bigHello again with "someone" should still 
         return the original value (due to caching at requestscope: ${viewCtrl.bigHello(someone)}</p>

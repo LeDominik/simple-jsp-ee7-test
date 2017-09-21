@@ -20,9 +20,17 @@
 
           <form action="data.jsp" method="get">
             <div class="form-group">
+              <label for="entity">The Entity</label> <br>
+              <select id="entity "name="entity">
+                <option value="0100">BAWAG</option>
+                <option value="0110">PSK</option>
+                <option value="0109">EASYBANK</option>
+                <option value="0101">SPARDA</option>
+              </select> <br>
               <label for="userName">The Name</label>
               <input type="text" class="form-control" id="userName" name="name" aria-describedby="userNameHelp" placeholder="Enter name">
               <small id="userNameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+            
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
